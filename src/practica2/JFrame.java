@@ -10,7 +10,7 @@ public class JFrame extends javax.swing.JFrame {
     public JFrame() {
         initComponents();
     }
-    
+    //metodo para comprobar si es fichero o directorio que usare para insertar en el row
     public String fD(File file){
         if(file.isDirectory()){
             return "Es un directorio";
@@ -124,7 +124,8 @@ public class JFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_extensionFieldActionPerformed
 
     private void directorioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_directorioButtonActionPerformed
-        // TODO add your handling code here:
+        //TODO add your handling code here:
+        //creo un objeto por defecto de la tabla donde crear las columnas e insertar los datos
         DefaultTableModel tabla = new DefaultTableModel();
         tabla.addColumn("Nombre");
         tabla.addColumn("Tamaño");
@@ -149,6 +150,7 @@ public class JFrame extends javax.swing.JFrame {
             }
 
             }
+        //aqui igualo mi objeto Jtable a la tabla por defecto
         dirTable.setModel(tabla);
         }
         
